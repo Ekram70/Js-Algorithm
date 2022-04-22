@@ -1,4 +1,4 @@
-var segSieve = function (start, end) {
+function segSieve(start, end) {
   let limit = Math.ceil(Math.sqrt(end));
   let arr = new Array(limit).fill(true);
   for (let i = 2; i * i <= end; i++) {
@@ -29,4 +29,4 @@ var segSieve = function (start, end) {
   }
 
   return result;
-};
+}
